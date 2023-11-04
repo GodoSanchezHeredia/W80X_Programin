@@ -1,0 +1,30 @@
+/*****************************************************************************
+*
+* File Name : main.c
+*
+* Description: main
+*
+* Copyright (c) 2014 Winner Micro Electronic Design Co., Ltd.
+* All rights reserved.
+*
+* Author : dave
+*
+* Date : 2014-6-14
+*****************************************************************************/
+#include "wm_include.h"
+
+void UserMain(void)
+{
+	printf("\n user task \n");
+	tls_gpio_cfg(WM_IO_PB_25, WM_GPIO_DIR_OUTPUT, WM_GPIO_ATTR_FLOATING);
+	tls_gpio_write(WM_IO_PB_25,0);			/*Ð´¸ß*/
+
+
+	for(;;){
+		tls_gpio_write(WM_IO_PB_25,0);
+		delay(50000);
+		tls_gpio_write(WM_IO_PB_25,1);
+		delay(50000);
+	}
+}
+

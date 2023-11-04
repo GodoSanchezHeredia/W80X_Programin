@@ -1,0 +1,90 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+BIN_SRCS := 
+OBJ_SRCS := 
+S_SRCS := 
+ASM_SRCS := 
+C_SRCS := 
+S_UPPER_SRCS := 
+O_SRCS := 
+OBJS := 
+ASM_DEPS := 
+S_DEPS := 
+S_UPPER_DEPS := 
+C_DEPS := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+demo/console \
+demo \
+include \
+platform/arch/xt804/bsp \
+platform/arch/xt804/minilibc \
+platform/common/crypto/digest \
+platform/common/crypto/keyformat \
+platform/common/crypto/math \
+platform/common/crypto/prng \
+platform/common/crypto/pubkey \
+platform/common/crypto/symmetric \
+platform/common/crypto \
+platform/common/fwup \
+platform/common/mem \
+platform/common/params \
+platform/common/task \
+platform/common/utils \
+platform/drivers/7816 \
+platform/drivers/adc \
+platform/drivers/cpu \
+platform/drivers/dma \
+platform/drivers/efuse \
+platform/drivers/flash \
+platform/drivers/gpio \
+platform/drivers/i2c \
+platform/drivers/i2s \
+platform/drivers/internalflash \
+platform/drivers/io \
+platform/drivers/irq \
+platform/drivers/pmu \
+platform/drivers/pwm \
+platform/drivers/rtc \
+platform/drivers/sasc \
+platform/drivers/spi \
+platform/drivers/timer \
+platform/drivers/uart \
+platform/drivers/watchdog \
+platform/sys \
+src/app/cJSON \
+src/app/dhcpserver \
+src/app/dnsserver \
+src/app/httpclient \
+src/app/iperf \
+src/app/library \
+src/app/libwebsockets-2.1-stable \
+src/app/mDNS/mDNSCore \
+src/app/mDNS/mDNSPosix \
+src/app/matrixssl \
+src/app/matrixssl/core \
+src/app/mbedtls/library \
+src/app/mbedtls/ports \
+src/app/mqtt \
+src/app/ntp \
+src/app/oneshotconfig \
+src/app/ota \
+src/app/ping \
+src/app/sslserver \
+src/app/web \
+src/app/wm_atcmd \
+src \
+src/network/api2.0.3 \
+src/network/lwip2.0.3/api \
+src/network/lwip2.0.3/core \
+src/network/lwip2.0.3/core/ipv4 \
+src/network/lwip2.0.3/core/ipv6 \
+src/network/lwip2.0.3/netif \
+src/network/lwip2.0.3 \
+src/os/rtos/ports/xt804 \
+src/os/rtos/source \
+src/os/rtos \
+

@@ -1,0 +1,45 @@
+12:29:25 **** Incremental Build of configuration Debug for project w800_sdk ****
+make -j4 all 
+Building file: C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:17:91: warning: excess elements in array initializer
+ uint8_t pin[6] = {WM_IO_PB_05,WM_IO_PB_25,WM_IO_PB_26,WM_IO_PB_18,WM_IO_PB_17,WM_IO_PB_16,WM_IO_PB_11};
+                                                                                           ^~~~~~~~~~~
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:17:91: note: (near initialization for 'pin')
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c: In function 'UserMain':
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:35:4: warning: implicit declaration of function 'mdelay' [-Wimplicit-function-declaration]
+    mdelay(500);
+    ^~~~~~
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:37:4: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+    delay(500);
+    ^~~~~
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:33:22: warning: iteration 6 invokes undefined behavior [-Waggressive-loop-optimizations]
+    tls_gpio_write(pin[var],0);
+                   ~~~^~~~~
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:31:3: note: within this loop
+   for (uint8_t var = 0; var < 7; ++var) {
+   ^~~
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:23:19: warning: iteration 6 invokes undefined behavior [-Waggressive-loop-optimizations]
+   tls_gpio_cfg(pin[var], WM_GPIO_DIR_OUTPUT, WM_GPIO_ATTR_FLOATING);
+                ~~~^~~~~
+C:/Users/DELL/Downloads/wm_sdk_w800-main/app/main.c:22:2: note: within this loop
+  for (uint8_t var = 0; var < 7; ++var) {
+  ^~~
+Building target: w800.elf
+ 
+Size of w800.elf:
+   text	   data	    bss	    dec	    hex	filename
+ 759956	  27224	 166308	 953488	  e8c90	w800.elf
+ 
+make --no-print-directory post-build
+sh ..//../../../../../../tools/w800/utilities//aft_build_project.sh
+w800
+1
+generate normal image completed.
+
+compress binary completed.
+
+generate compressed image completed.
+
+ 
+Outputing file w800.ihex
+Outputing file w800.bin
